@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let name = 'yas"'
+      console.log(name.length)
+
+      const sentence = 'the quick brown fox jumps over the lazy dog'
+      // const word = 'fox'
+      const word = 'fox2'
+      console.log(sentence.includes(word))
+      console.log(
+        `the word "${word}" ${
+          sentence.includes(word) ? 'is' : 'is not'
+        } in the sentence`,
+      )
+
+      let str2 = 'please give Rs 1000'
+      // let amount = str2.slice(15)
+      let amount = Number.parseInt(str2.slice(15))
+      console.log(amount)
+      console.log(typeof amount)
+
+      let friend = 'simran'
+      friend[2] = 'p'
+      console.log(friend)
+      // friend is not chamge. because string is immutable
+    </script>
+  </body>
+</html>
