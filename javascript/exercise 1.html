@@ -12,7 +12,7 @@
       let chances = 0
       let guess
       while (guess != number) {
-        guess = prompt('enter the number between : ')
+        guess = prompt('enter the number between 1 : 100 ' + number)
         guess = Number.parseInt(guess)
         chances++
         if (guess == number) {
@@ -20,12 +20,12 @@
           console.log('you guess the actual number  in $(100-score) chances.')
         } else if (guess > number && guess < 100) {
           console.log('number is greater than actual number ', guess)
-          guess = prompt('enter again!!')
-          guess = Number.parseInt(guess)
+          // guess = prompt('enter again!!')
+          // guess = Number.parseInt(guess)
         } else if (guess < number && guess > 0) {
           console.log('number is less than actual number', guess)
-          guess = prompt('enter again!!')
-          guess = Number.parseInt(guess)
+          // guess = prompt('enter again!!')
+          // guess = Number.parseInt(guess)
         } else {
           console.log('enter your number between 1 to 100')
         }
