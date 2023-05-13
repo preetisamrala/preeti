@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        background: rgb(233, 237, 237);
+      }
+      nav li {
+        list-style: none;
+        padding: 0 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <li>home</li>
+      <li>about</li>
+      <li>blog</li>
+      <li>contact</li>
+    </nav>
+    <table>
+      <td>hello</td>
+      <tr>hello 1</tr>
+      <tr>hello 2</tr>
+      <tr>hello 3</tr>
+      <tr>hello 4</tr>
+    </table>
+    <script>
+      // problem 1
+      document.getElementsByTagName('nav')[0].firstElementChild.style.color =
+        'red'
+      // problem 3
+      document.getElementsByTagName('nav')[0].firstElementChild.style.color =
+        'green'
+      document.getElementsByTagName('nav')[0].lastElementChild.style.color =
+        'green'
+      // problem 4
+      Array.from(document.getElementsByTagName('li')).forEach((element) => {
+        element.style.background = 'cyan'
+      })
+    </script>
+  </body>
+</html>
