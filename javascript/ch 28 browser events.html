@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      onmouseenter="console.log('mouse inside the container')"
+      onclick="console.log('click inside container')"
+    >
+      <button onclick="alert('hello'); let a = 6; console.log(a)">
+        click me
+      </button>
+    </div>
+
+    <script>
+      let a = document.getElementsByClassName('container')[0]
+      a.onclick = () => {
+        let b = document.getElementsByClassName('container')[0]
+        b.innerHTML = 'hello'
+      }
+    </script>
+  </body>
+</html>
